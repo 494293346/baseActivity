@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="twentyalpha">#33000000</color>
+    <color name="alpha">#00000000</color>
+    <color name="as_z6">#8b8b8b</color>
+    <color name="white">#ffffffff</color>
+    <color name="text_z1">#353535</color>
+    <color name="main_bg">#eaeaea</color>
+    <color name="transparent">#00000000</color>
+</resources>
