@@ -6,7 +6,7 @@ Activity项目一个基类
  具体效果如下图：
 ```
 ##效果图展示
-![图片描述](https://github.com/494293346/baseActivity/tree/master/images/image.gif)
+![图片描述](https://github.com/494293346/baseActivity/blob/master/images/image.gif)
 ##用法
  ```
 1、activity继承该项目中的BaseActivity
