@@ -36,37 +36,26 @@
         android:textColor="@color/white"
         android:textSize="16sp" />
 
-    <Button
-        android:background="@null"
-        android:id="@+id/top_right_button"
+    <TextView
+        android:id="@+id/top_right_text"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:gravity="center"
-        android:drawablePadding="3dp"
-        android:paddingRight="8dp"
         android:paddingLeft="8dp"
-        android:textColor="@color/color_bt_top_right"
-        android:textSize="15sp"
-        android:visibility="gone"
-        />
-    <Button
-        android:layout_toLeftOf="@+id/top_right_button"
-        android:id="@+id/top_right_button_sec"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:background="@drawable/bg_alpha_twenty"
-        android:gravity="center"
         android:paddingRight="15dp"
-        android:paddingLeft="8dp"
         android:textColor="@color/white"
-        android:textSize="15sp"
-        android:visibility="gone"
+        android:textSize="14sp"
+        android:visibility="invisible"
         />
-
+    <ImageView
+        android:id="@+id/top_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:visibility="invisible" />
     <View
         android:id="@+id/headBottomLine"
         style="@style/lineHead"

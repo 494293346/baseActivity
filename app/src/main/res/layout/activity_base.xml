@@ -37,7 +37,13 @@
         android:layout_below="@+id/fraLayoutHeadView"
         layout="@layout/reset_error_layout"
         android:visibility="gone" />
-
+    <include
+        android:id="@+id/emptyLayout"
+        layout="@layout/view_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fraLayoutHeadView"
+        android:visibility="gone" />
     <FrameLayout
         android:id="@+id/backgroud_view"
         android:layout_width="match_parent"

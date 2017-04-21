@@ -10,7 +10,7 @@ import basea.asheng.cn.baseactivity.base.BaseActivity;
 
 public class SecondActivity extends BaseActivity {
     private Context mContext;
-    private Button btnHideHead, btnShowHead, btnSetTitle, btnTopLeft, btnTopRight, btnShowLoad, btnShowLoadDialog, btnShowEror, btnShowLoadDialogCancle;
+    private Button btnHideHead, btnShowHead, btnSetTitle, btnTopLeft, btnTopRight, btnShowLoad, btnShowLoadDialog, btnShowEror, btnShowLoadDialogCancle, btnShowEmpty;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,8 @@ public class SecondActivity extends BaseActivity {
         btnShowEror.setOnClickListener(this);
         btnShowLoadDialogCancle = (Button) findViewById(R.id.btnShowLoadDialogCancle);
         btnShowLoadDialogCancle.setOnClickListener(this);
+        btnShowEmpty = (Button) findViewById(R.id.btnShowEmpty);
+        btnShowEmpty.setOnClickListener(this);
     }
 
     @Override
@@ -59,11 +61,9 @@ public class SecondActivity extends BaseActivity {
 //            showTopLeftButton("返回", R.mipmap.ic_launcher);
         } else if (v.getId() == R.id.btnTopRight) {
             //设置文字
-            showTopRightButtonText("右上方");
-            //文字+图片
-//            showTopRightButtonSec("右上方", R.mipmap.ic_launcher);
+            showTopRightText("右上方");
             //图片
-//            showTopRightButtonImg(R.mipmap.ic_launcher);
+//            showTopRightImg(R.mipmap.share);
         } else if (v.getId() == R.id.btnShowLoadDialog) {
             showLoadingDialog();
             new Thread() {
@@ -106,6 +106,8 @@ public class SecondActivity extends BaseActivity {
             }.start();
         } else if (v.getId() == R.id.btnShowEror) {
             showErrorLayout();
+        } else if (v.getId() == R.id.btnShowEmpty) {
+            showEmptyLayout("空页面");
         }
     }
 
@@ -116,14 +118,12 @@ public class SecondActivity extends BaseActivity {
     }
 
     @Override
-    protected void onClickedTopRightButtton(View view) {
-        super.onClickedTopRightButtton(view);
-        Toast.makeText(mContext, "右上角 无图片时", Toast.LENGTH_SHORT).show();
+    protected void onClickToprightImg(View view) {
+        super.onClickToprightImg(view);
     }
 
     @Override
-    protected void onClickedtopRightButtonSec(View view) {
-        super.onClickedtopRightButtonSec(view);
-        Toast.makeText(mContext, "右上角 有图片时", Toast.LENGTH_SHORT).show();
+    protected void onClickTopRightText(View view) {
+        super.onClickTopRightText(view);
     }
 }

@@ -56,5 +56,10 @@
         android:id="@+id/btnShowEror"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:text="显示空页面"
+        android:id="@+id/btnShowEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
 </ScrollView>
